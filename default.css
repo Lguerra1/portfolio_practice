@@ -222,6 +222,8 @@ h6 {
     grid-area: right-column;
     display: grid;
     align-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 #preview-shadow{
@@ -269,6 +271,22 @@ h6 {
     left: -5px;
 }
 
+.about-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    padding: 50px 0 50px 0;
+}
+
+#skills {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: var(--previewShadow);
+}
+
+#social_img {
+    width: 100%;
+}
+
 
 #dot-1 {
     background-color: #FC6058;
@@ -282,6 +300,12 @@ h6 {
     background-color: #2ACA3E;
 }
 
+@media screen and (max-width: 1200px){
+    .main-container {
+        width: 95%
+    }
+}
+
 
 @media screen and (max-width: 800px) {
     .intro-wrapper {
@@ -291,5 +315,9 @@ h6 {
             "left-column"
             "right-column"
         ;
+    }
+
+    .right-column {
+        justify-content: center;
     }
 }
